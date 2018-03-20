@@ -20,8 +20,3 @@ class Multiples
 end
 end
 puts Multiples.new.range(1,999)
-
-#test 1
-# Divisible_by gives 0 as result: input(3,3) expect true
-# Divisible_by gives 0 as result: input(5,3) expect false
-# Test range function s = 1 e = 9 expect 23 
