@@ -14,7 +14,7 @@ class Fib
   end
 
   def even_fib
-    while i <= max
+    while @i <= @max
       @i = @num_1 + @num_2
 
       @sum += @i if divisble_by(@i,2)
@@ -24,10 +24,9 @@ class Fib
       @num_2 = @i
 
     end
-    sum
+    @sum
   end
 
 end
-
 result = Fib.new(4000000)
 puts result.even_fib
