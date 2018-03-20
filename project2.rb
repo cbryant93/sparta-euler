@@ -9,19 +9,19 @@ class Fib
     @sum = 0
   end
 
-  def divisble_by(i,d)
-    (i%d).zero?
+  def divisble_by(num,div)
+    (num%div).zero?
   end
 
   def even_fib
     while i <= max
-      i = num_1 + num_2
+      @i = @num_1 + @num_2
 
-      sum += i if divisble_by(i,2)
+      @sum += @i if divisble_by(@i,2)
 
-      num_1 = num_2
+      @num_1 = @num_2
 
-      num_2 = i
+      @num_2 = @i
 
     end
     sum
